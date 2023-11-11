@@ -154,9 +154,17 @@ section{
 
 .section__container{
     width: 80%;
-    margin: 0 auto;
+    margin: 2rem auto;
     padding: 2rem;
     margin-bottom: 2rem;
+}
+
+.section__title{
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: var(--color-darkest);
+    margin-bottom: 3rem;
 }
 
 /*-- NAV TITLE --*/
@@ -242,17 +250,43 @@ section{
 
 .header__top-container-socials{
     border-right: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    column-gap: 10px;
 }
 
 .header__top-container-socials i{
-    font-size: 22px;
-    padding: 8px;
-    color: var(--color-yellow);
-    transition: all .3s ease;
+    font-size: 15px;
+    padding: 15px;
+    color: #FFF;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    outline: 1px solid #FFF;
+    transition-property: outline-offset, outline-color, background-color;
+    transition-duration: 0.25s;
 }
 
 .header__top-container-socials i:hover{
-    transform: translateY(-5px)
+    outline-offset: 2px;
+    animation: shake 0.25s;
+}
+
+.icon__fb:hover{
+    background-color: #4267B2;
+}
+
+.icon__insta:hover{
+    background: linear-gradient(50deg,#405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
+}
+
+@keyframes shake{
+    10%{transform: rotate(15deg);}
+    20%{transform: rotate(-15deg);}
+    30%{transform: rotate(15deg);}
+    40%{transform: rotate(-15deg);}
 }
 
 .header__top-info{
@@ -491,6 +525,15 @@ main{
     font-weight: 900;
 }
 
+/*-- ABOUT --*/
+.about__container{
+    display: grid;
+    width: 100%;
+    grid-template-columns:  60% 40%;
+}
+
+
+
 /*-- FOOTER --*/
 .footer{
     display: grid;
@@ -592,12 +635,17 @@ main{
 .scroll-up__container{
     position: fixed;
     bottom: 10rem;
-    right: 5rem;
+    right: 2rem;
     width: 4rem;
     height: 4rem;
     background-color: var(--color-yellow);
     box-shadow: 0px 0px 30px rgba(0, 0, 0, .3);
     border:1px solid var(--color-darkest);
+    transition: all 0.2s linear;
+}
+
+.scroll-up__container:hover{
+    transform: translateY(-15px);
 }
 
 .scroll-up{
