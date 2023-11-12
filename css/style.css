@@ -156,7 +156,7 @@ section{
 }
 
 .section__container{
-    width: 80%;
+    width: 90%;
     margin: 2rem auto;
     padding: 2rem;
     margin-bottom: 2rem;
@@ -498,9 +498,17 @@ main{
     background-size: cover;
     margin: 0 auto;
     width: 100%;
-    height: 35vh;
+    height: 40rem;
     display: grid;
     grid-template-columns: 50% 50%;
+    animation: reveal_bg 3s;
+    animation-duration: 3s;
+    transition: reveal_bg 3s linear;
+}
+
+@keyframes reveal_bg{
+    0% {opacity: 0; background-size: 110%;}
+    100% {opacity: 1; background-size: 100%;}
 }
 
 .hero__right{
@@ -520,6 +528,16 @@ main{
     max-width: 400px;
     line-height: 1.4;
     margin-bottom: 5rem;
+    transition: all 2s ease;
+    animation: reveal 2s;
+    /* animation-delay: 1s; */
+    animation-duration: 2s;
+}
+
+@keyframes reveal{
+    0%{opacity: 0;margin-bottom: 0rem;line-height: 0;}
+    50%{opacity: .5; }
+    100%{opacity: 1; margin-bottom: 5rem;}
 }
 
 .logo__club{
