@@ -608,10 +608,9 @@ main{
 
 /*-- ABOUT --*/
 .about__container{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 50% 50%;
     width: 100%;
-    grid-template-columns:  40% 60%;
     gap: 3rem;
 }
 
@@ -643,7 +642,10 @@ main{
 }
 
 .about__img{
-    width: 100%;
+    width: 30rem;
+    height: max-content;
+    object-fit: cover;
+    place-self: center;
 }
 
 .video__yt{
@@ -698,6 +700,91 @@ main{
 .button:hover::before{
       width: 100%;
 }
+
+/*-- ACTIVITY --*/
+.activity__card-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.parent{
+    width: auto;
+    height: 300px;
+    color: var(--color-white);
+    overflow: hidden;
+}
+
+.child{
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all .5s;
+}
+
+.child::before{
+    content: "";
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.parent .child span{
+    color: var(--color-white);
+    padding: 25%;
+    line-height: 1.7;
+}
+
+.parent:hover span, .parent:focus span{
+    display: block;
+}
+
+.parent:hover .child::before, .parent:focus .child::before{
+    display: block;
+}
+
+.parent:hover .child, .parent:focus .child{
+    transform: scale(1.2);
+}
+
+.baby__card{
+    background-image: url(../images/baby__card.jpg);
+    background-position: right;
+}
+
+.child__card{
+    background-image: url(../images/enfants__card.webp);
+}
+
+.adult__card{
+    background-image: url(../images/adult__card.jpg);
+    background-position: 25%;
+}
+
+.taiso__card{
+    background-image: url(../images/taiso__card.jpg);
+    background-position: 20%;
+}
+
+.name__group{
+    width: 100%;
+    background-color: var(--color-orange);
+    padding: 1rem;
+    color: var(--color-white);
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+
 
 
 
@@ -819,6 +906,43 @@ main{
 .scroll-up{
     filter: drop-shadow(2px 2px 2px rgba(0,0,0,.3));
 }
+
+/*-- 
+        RESPONSIVE 
+
+Points de Ruptures
+480 à 720px smartphones
+768 à 900px tablettes en mode portrait
+900 à 1024px tablettes en mode paysage
+1024 à 1200px ordinateurs
+                        --*/
+
+@media screen and (max-width: 720px ) {
+    
+}
+
+@media screen and (max-width: 900px ) {
+    
+}
+
+@media screen and (max-width: 1024px ) {
+    
+}
+
+@media screen and (max-width: 1199px ) {
+    
+}
+
+@media screen and (min-width: 1200px ) {
+    
+}
+
+/*-- NAV --*/
+
+/*-- HEADER --*/
+
+/*-- ABOUT --*/
+
 
 
 

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/dashboard.css" />
+    <title>Responsive Dashboard Design #1 | AsmrProg</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Sidebar Section -->
+      <aside>
+        <div class="toggle">
+          <div class="logo">
+            <img src="../images/logo_club.png" />
+            <h2>USB <span class="danger">Judo</span></h2>
+          </div>
+          <div class="close" id="close-btn">
+            <span class="material-icons-sharp"> close </span>
+          </div>
+        </div>
+
+        <div class="sidebar">
+          <a href="#" class="active">
+            <span class="material-icons-sharp"> dashboard </span>
+            <h3>Tableau bord</h3>
+          </a>
+          <a href="#">
+            <span class="material-icons-sharp"> person_outline </span>
+            <h3>Adhérents</h3>
+          </a>
+          <a href="#">
+            <span class="material-icons-sharp"> face </span>
+            <h3>Fiche Ind.</h3>
+          </a>
+          <a href="#">
+            <span class="material-icons-sharp"> person_add </span>
+            <h3>Nouvel adh.</h3>
+          </a>
+          <a href="#">
+            <span class="material-icons-sharp"> group </span>
+            <h3>Groupes</h3>
+          </a>
+          <a href="#">
+            <span class="material-icons-sharp"> insights </span>
+            <h3>Statistiques</h3>
+          </a>
+          <a href="#">
+            <span class="material-icons-sharp"> mail_outline </span>
+            <h3>Messages</h3>
+            <span class="message-count">27</span>
+          </a>
+          <a href="#">
+            <span class="material-icons-sharp"> calendar_month </span>
+            <h3>Calendrier</h3>
+          </a>
+          <a href="#">
+            <span class="material-icons-sharp"> euro </span>
+            <h3>Comptabilité</h3>
+          </a>
+          <a href="#">
+            <span class="material-icons-sharp"> settings </span>
+            <h3>Settings</h3>
+          </a>
+          <a href="#">
+            <span class="material-icons-sharp"> logout </span>
+            <h3>Logout</h3>
+          </a>
+        </div>
+      </aside>
+      <!-- End of Sidebar Section -->
+
+      <!-- Main Content -->
+      <main>
+        <h1>Tableau de Bord <small> Administrateur</small></h1>
+        <!-- Analyses -->
+        <div class="analyse">
+          <div class="sales">
+            <div class="status">
+              <div class="info">
+                <h3>Règlements</h3>
+                <h1>25.000€</h1>
+              </div>
+              <div class="progresss">
+                <svg>
+                  <circle cx="38" cy="38" r="36"></circle>
+                </svg>
+                <div class="percentage">
+                  <p>+81%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="visits">
+            <div class="status">
+              <div class="info">
+                <h3>Nb visites</h3>
+                <h1>600</h1>
+              </div>
+              <div class="progresss">
+                <svg>
+                  <circle cx="38" cy="38" r="36"></circle>
+                </svg>
+                <div class="percentage">
+                  <p>-48%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="searches">
+            <div class="status">
+              <div class="info">
+                <h3>Inscriptions saison</h3>
+                <h1>216</h1>
+              </div>
+              <div class="progresss">
+                <svg>
+                  <circle cx="38" cy="38" r="36"></circle>
+                </svg>
+                <div class="percentage">
+                  <p>+21%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of Analyses -->
+
+        <!-- New Users Section -->
+        <div class="new-users">
+          <h2>Nouveaux adhérents (saison 2023-2024)</h2>
+          <div class="user-list">
+            <div class="user">
+              <img
+                src="https://lh3.googleusercontent.com/contacts/ABsqpluZutUs7X5aCY1-JMNiuO2p4q32-06rYMbDd9p856ne-1vymrU=s272-p-k-rw-no"
+              />
+              <h2>Nathan</h2>
+              <p>il y a 54min</p>
+            </div>
+            <div class="user">
+              <img
+                src="https://lh3.googleusercontent.com/contacts/ANvYioc2h6-KihghflyFZLj9hosDY7pULms5AQoEUQShl8zPApeH0Bg=s272-p-k-rw-no"
+              />
+              <h2>Eva Jeanne</h2>
+              <p>il y a 1 jour</p>
+            </div>
+            <div class="user">
+              <img
+                src="https://lh3.googleusercontent.com/contacts/ABsqplv8Ajt-QNP8503kGGgvYLpi4Dz_dLci7vBF_vdQciZFecY5SI8=s272-p-k-rw-no"
+              />
+              <h2>Albane</h2>
+              <p>il y a 20 jours</p>
+            </div>
+            <div class="user">
+              <img src="../images/plus.png" />
+              <h2>More</h2>
+              <p>New User</p>
+            </div>
+          </div>
+        </div>
+        <!-- End of New Users Section -->
+
+        <!-- Recent Orders Table -->
+        <div class="recent-orders">
+          <h2>Paiements récents</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Licenciés</th>
+                <th>Règlement</th>
+                <th>Type</th>
+                <th>Statut</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+          <a href="#">Voir plus</a>
+        </div>
+        <!-- End of Recent Orders -->
+      </main>
+      <!-- End of Main Content -->
+
+      <!-- Right Section -->
+      <div class="right-section">
+        <div class="nav">
+          <button id="menu-btn">
+            <span class="material-icons-sharp"> menu </span>
+          </button>
+          <div class="dark-mode">
+            <span class="material-icons-sharp active"> light_mode </span>
+            <span class="material-icons-sharp"> dark_mode </span>
+          </div>
+
+          <div class="profile">
+            <div class="info">
+              <p>Bonjour, <b>Laurent</b></p>
+              <small class="text-muted">Admin</small>
+            </div>
+            <div class="profile-photo">
+              <img src="../images/Photo Laurent2.jpg" />
+            </div>
+          </div>
+        </div>
+        <!-- End of Nav -->
+
+        <div class="user-profile">
+          <div class="logo">
+            <img src="../images/logo_club.png" />
+            <h2>US Bouscat Judo Taïso</h2>
+            <p>74 rue des Ecus - Le Bouscat</p>
+            <p><a href="mailto:usbjudo33@gmail.com">usbjudo33@gmail.com</a></p>
+          </div>
+        </div>
+
+        <div class="reminders">
+          <div class="header">
+            <h2>Pense-bête</h2>
+            <span class="material-icons-sharp"> notifications_none </span>
+          </div>
+
+          <div class="notification">
+            <div class="icon">
+              <span class="material-icons-sharp"> volume_up </span>
+            </div>
+            <div class="content">
+              <div class="info">
+                <h3>Réunion USB Judo</h3>
+                <small class="text_muted"> 08:00 AM - 12:00 PM </small>
+              </div>
+              <span class="material-icons-sharp"> more_vert </span>
+            </div>
+          </div>
+
+          <div class="notification deactive">
+            <div class="icon">
+              <span class="material-icons-sharp"> edit </span>
+            </div>
+            <div class="content">
+              <div class="info">
+                <h3>Compétition Minimes</h3>
+                <small class="text_muted"> 15:00 AM - 18:00 PM </small>
+              </div>
+              <span class="material-icons-sharp"> more_vert </span>
+            </div>
+          </div>
+
+          <div class="notification add-reminder">
+            <div>
+              <span class="material-icons-sharp"> add </span>
+              <h3>Add Reminder</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/orders.js"></script>
+    <script src="../js/dashboard.js"></script>
+  </body>
+</html>
