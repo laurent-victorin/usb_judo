@@ -13,6 +13,9 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
   </head>
   <body>
     <header class="header">
@@ -20,7 +23,7 @@
         <div class="geometric__shape"></div>
         <div class="nav__tag-titles">
           <a href="#home"
-            ><img class="icon__kimono" src="./images/logo_club.png" alt=""
+            ><img class="icon__logo" src="./images/logo_club.png" alt=""
           /></a>
           <h1 class="nav__tag-title">US Bouscat<br />Judo-Taïso</h1>
         </div>
@@ -101,17 +104,19 @@
           >
             logout
           </span>
+          <button class="hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
 
         </div>
-        <button class="hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+
       </nav>
 
     </header>
 
+ 
     <main class="main">
       <!-- SECTION HERO-->
       <section class="hero">
@@ -193,7 +198,18 @@
         </div>
       </section>
 
-      <!--SECTION ACTIVITY-->
+                <!-- Swiper 5 bonnes raisons d'inscrire votre enfant au Judo-->
+                <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./images/FB_IMG_1699893583879.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/FB_IMG_1699893590788.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/FB_IMG_1699893597147.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/FB_IMG_1699893603547.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/FB_IMG_1699893609148.jpg" alt=""></div>
+                  </div>
+                <div class="swiper-pagination"></div>
+
+      <!-- SECTION ACTIVITY -->
       <section class="section__container activity">
         <div>
           <div class="belt__title">
@@ -202,7 +218,7 @@
               src="./images/Judo_yellow_belt.svg.png"
               alt=""
             />
-            <h2 class="section__title">Activités</h2>
+            <h2 class="section__title">Nos Cours</h2>
           </div>
 
         <div class="activity__card-container">
@@ -244,7 +260,7 @@
         </div>
       </section>
 
-      <!--SECTION DISCIPLINES-->
+      <!-- SECTION DISCIPLINES -->
       <section class="section__container disciplines">
         <div>
           <div class="belt__title">
@@ -259,7 +275,7 @@
           <span>Faire infographie de fond</span>
       </section>
 
-      <!--SECTION TEAM-->
+      <!-- SECTION TEAM -->
       <section class="section__container team">
         <div>
           <div class="belt__title">
@@ -272,21 +288,102 @@
           </div>
       </section>
 
-      <!--SECTION PRICES-->
+      <!-- SECTION CODE MORALE -->
+      <section class="section__container team">
+        <div>
+          <div class="belt__title">
+            <img
+              class="white-belt__img"
+              src="./images/Judo_blue_belt.svg.png"
+              alt=""
+            />
+            <h2 class="section__title">Nos Valeurs</h2>
+          </div>
+          <span>Card Img Code Moral du Judo en Sweaper JS</span>
+        </div>
+
+
+
+          <!-- Swiper 5 bonnes raisons d'inscrire votre enfant au Judo-->
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide swiper-cm">
+                    <div class="swiper-cm-card-container">
+                    <img src="./images/1632_1679738040_2df32ba3f010b6393d36.jpg" alt="">
+                    <h2 class="swiper-cm-title">Amitié</h2>
+                    <p class="swiper-cm-subtitle">C'est le plus pur des sentiments humains.</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-cm">
+                    <div class="swiper-cm-card-container">
+                    <img src="./images/1634_1688996789_071175a58e234a598fda.jpg" alt="">
+                    <h2 class="swiper-cm-title">Courage</h2>
+                    <p class="swiper-cm-subtitle">C'est faire ce qui est juste.</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-cm">
+                    <div class="swiper-cm-card-container">
+                    <img src="./images/1636_1679738040_9ed14610c0b11b50abb9.jpg" alt="">
+                    <h2 class="swiper-cm-title">Respect</h2>
+                    <p class="swiper-cm-subtitle">Sans respect aucune confiance ne peut naître.</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-cm">
+                    <div class="swiper-cm-card-container">
+                    <img src="./images/1638_1679738040_e8482a1a7f94314fb781.jpg" alt="">
+                    <h2 class="swiper-cm-title">Contrôle de soi</h2>
+                    <p class="swiper-cm-subtitle">C'est savoir se taire lorsque monte la colère.</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-cm">
+                    <div class="swiper-cm-card-container">
+                    <img src="./images/1640_1679738040_b071cba82c1a493bc2bf.jpg" alt="">
+                    <h2 class="swiper-cm-title">Honneur</h2>
+                    <p class="swiper-cm-subtitle">C'est être fidèle à la parole donnée.</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-cm">
+                    <div class="swiper-cm-card-container">
+                    <img src="./images/1642_1679738040_3f2275a216294bf0e868.jpg" alt="">
+                    <h2 class="swiper-cm-title">Politesse</h2>
+                    <p class="swiper-cm-subtitle">C'est le respect d'autrui.</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-cm">
+                    <div class="swiper-cm-card-container">
+                    <img src="./images/1644_1679738040_bc346356a546e34b79b1.jpg" alt="">
+                    <h2 class="swiper-cm-title">Sincérité</h2>
+                    <p class="swiper-cm-subtitle">C'est s'exprimer sans déguiser sa pensée.</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-cm">
+                    <div class="swiper-cm-card-container">
+                    <img src="./images/1646_1679738040_450c7db97bf1c3015231.jpg" alt="">
+                    <h2 class="swiper-cm-title">Modestie</h2>
+                    <p class="swiper-cm-subtitle">C'est parler de soi-même sans orgueil.</p>
+                    </div>
+                  </div>
+                </div>
+              <div class="swiper-pagination-cm"></div>
+
+      </section>      
+
+      <!-- SECTION PRICES -->
       <section class="section__container prices">
         <h2 class="section__title">Tarifs</h2>
       </section>
 
-      <!--SECTION SIGN IN-->
+      <!-- SECTION SIGN IN -->
       <section class="section__container sign-in">
         <h2 class="section__title">Inscription</h2>
       </section>
 
-      <!--SECTION Contact-->
+      <!-- SECTION Contact -->
       <section class="section__container contact">
         <h2 class="section__title">Contact</h2>
       </section>
     </main>
+    
 
     <!--SECTION FOOTER-->
     <footer class="footer">
@@ -369,5 +466,8 @@
     ></script>
     <!-- Hamburger.js-->
     <script src="./js/hamburger.js"></script>
+    <!-- Swiper JS-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
   </body>
 </html>

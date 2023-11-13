@@ -161,6 +161,7 @@ section{
     margin: 2rem auto;
     padding: 2rem;
     margin-bottom: 2rem;
+    max-width: 1680px;
 }
 
 .section__title{
@@ -219,7 +220,7 @@ section{
     width: 235px;
 }
 
-.icon__kimono{
+.icon__logo{
     position: relative;
     width: auto;
     padding: 1rem 2rem;
@@ -791,6 +792,49 @@ main{
     font-weight: 600;
 }
 
+/*-- CODE MORAL --*/
+.swiper-wrapper{
+    column-gap: 2rem;
+    position: relative;
+    margin-bottom: 5rem;
+}
+
+.swiper-slide{
+    max-width: 400px;
+
+}
+
+.swiper-cm{
+    max-width: 400px;
+}
+
+.swiper-cm-card-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #eee;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+    filter:saturate(1.5)
+}
+
+.swiper-cm-title{
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 1rem;
+    color: var(--color-black);
+}
+
+.swiper-cm-subtitle{
+    font-size: 1rem;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+}
+
+.swiper-cm-card-container:hover{
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .5);
+}
 
 
 
@@ -924,9 +968,89 @@ Points de Ruptures
 1024 à 1200px ordinateurs
                         --*/
 
-/* @media screen and (max-width: 720px ) {
+@media screen and (max-width: 720px ) {
+
+    .nav__tag{
+
+    }
+
+    .geometric__shape{
+        height: 100px;
+        width: 200px;
+    }
+
+    .icon__logo{
+        display: none;
+    }
+
+    .nav__tag-title{
+        top: 1.2rem;left: 4rem;
+        font-size: 2rem;
+    }
     
-} */
+    .header__top-info{
+        gap: 0;
+    }
+
+    .header__top-info p{
+        display: none;
+    }
+
+    .header__top-info span{
+        margin-right: 0;
+    }
+    
+    .about__container{
+        grid-template-columns: 1fr;
+    }
+
+    .hero__container{
+        grid-template-columns: 1fr;
+        margin-right: 0;
+    }
+
+    .hero__left{
+        display: none;
+    }
+
+    .hero__right{
+        align-items: end;
+        margin: 2rem 4rem;
+    }
+
+    .hero__title{
+        font-size: 2rem;
+    }
+
+    .dark-mode{
+        margin: 0;
+    }
+
+    .users{
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-right: 0;
+        gap: 0.5rem;
+    }
+    .users_profile-img{
+        width: 40px;height: 40px;
+    }
+
+    .name__role-name, .name__role-role{
+        display: none;
+    }
+
+    .dark-mode{
+        margin-right: 1rem;
+    }
+
+
+    .activity__card-container{
+        grid-template-columns: 2fr 2fr;
+    }
+}
 
 @media screen and (max-width: 900px ) {
     .nav {
@@ -935,15 +1059,7 @@ Points de Ruptures
         flex-direction: column;
         justify-content: center;
         align-items: flex-end;
-        height: 3rem;
-    }
-
-    .nav__tag{
-        display: none;
-    }
-
-    .users{
-        display: none;
+        height: 50px;
     }
 
     .nav__menu{
@@ -965,7 +1081,8 @@ Points de Ruptures
 
     .nav__menu-links{
         font-size: 2rem;
-        padding: 1rem 2rem;
+        padding: 1rem 0 1rem 1rem;
+        text-align: right;
     }
 
     .nav__home:hover::after{
