@@ -58,26 +58,30 @@
       </div>
 
       <nav class="nav">
-        <ul class="nav__menu">
-          <li class="nav__menu-links">
-            <a class="nav__menu-link nav__home nav__active" href="#home"
+
+        <div class="navlinks-container">
+          <ul class="nav__menu">
+
+            <li class="nav__menu-links">
+            <a class="nav__menu-link nav__home nav__active" href="#home"  aria-current="page"
               >Accueil</a
             >
-          </li>
-          <li class="nav__menu-links">
+            </li>
+            <li class="nav__menu-links">
             <a class="nav__menu-link nav__activity" href="#activity"
               >Nos activités</a
             >
-          </li>
-          <li class="nav__menu-links">
+            </li>
+            <li class="nav__menu-links">
             <a class="nav__menu-link nav__inscription" href="#inscription"
               >Inscriptions</a
             >
-          </li>
-          <li class="nav__menu-links">
+            </li>
+            <li class="nav__menu-links">
             <a class="nav__menu-link nav__contact" href="#contact">Contact</a>
           </li>
         </ul>
+        </div>
 
         <div class="users">
           <img
@@ -97,8 +101,15 @@
           >
             logout
           </span>
+
         </div>
+        <button class="hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </nav>
+
     </header>
 
     <main class="main">
@@ -184,7 +195,15 @@
 
       <!--SECTION ACTIVITY-->
       <section class="section__container activity">
-        <h2 class="section__title">Activités</h2>
+        <div>
+          <div class="belt__title">
+            <img
+              class="white-belt__img"
+              src="./images/Judo_yellow_belt.svg.png"
+              alt=""
+            />
+            <h2 class="section__title">Activités</h2>
+          </div>
 
         <div class="activity__card-container">
           <div>
@@ -225,9 +244,32 @@
         </div>
       </section>
 
+      <!--SECTION DISCIPLINES-->
+      <section class="section__container disciplines">
+        <div>
+          <div class="belt__title">
+            <img
+              class="white-belt__img"
+              src="./images/Judo_orange_belt.svg.png"
+              alt=""
+            />
+            <h2 class="section__title">Disciplines</h2>
+          </div>
+          <span>Judo 60% / Taïso 40%</span><br>
+          <span>Faire infographie de fond</span>
+      </section>
+
       <!--SECTION TEAM-->
       <section class="section__container team">
-        <h2 class="section__title">Notre équipe</h2>
+        <div>
+          <div class="belt__title">
+            <img
+              class="white-belt__img"
+              src="./images/Judo_green_belt.svg.png"
+              alt=""
+            />
+            <h2 class="section__title">Notre équipe</h2>
+          </div>
       </section>
 
       <!--SECTION PRICES-->
@@ -325,5 +367,7 @@
       src="https://kit.fontawesome.com/7cd067a4d7.js"
       crossorigin="anonymous"
     ></script>
+    <!-- Hamburger.js-->
+    <script src="./js/hamburger.js"></script>
   </body>
 </html>
