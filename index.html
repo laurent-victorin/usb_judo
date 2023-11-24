@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -54,9 +54,9 @@
             ></a>
           </div>
         </div>
-        <div class="dark-mode">
-          <span class="material-symbols-outlined">light_mode</span>
-          <span class="material-symbols-outlined">dark_mode</span>
+        <div id="theme-switcher" class="dark-mode">
+          <span class="material-symbols-outlined" id="icon-sun">light_mode</span>
+          <span  class="material-symbols-outlined" id="icon-moon">dark_mode</span>
         </div>
       </div>
 
@@ -111,15 +111,36 @@
           </button>
 
         </div>
-
       </nav>
-
     </header>
 
+<!--============================================================-->    
+<section class="slider">
+    <button class="btn slider__btn" type="button" aria-label="Précédent">
+      &lt;
+    </button>
+    <button class="btn slider__btn" type="button" aria-label="Suivant">
+      &gt;
+    </button>
+  </section>
+  
+<!--============================================================-->    
  
     <main class="main">
       <!-- SECTION HERO-->
+      
       <section class="hero">
+                <div class="belt__container">
+          <div class="white-belt belt"></div>
+          <div class="yellow-belt belt"></div>
+          <div class="orange-belt belt"></div>
+          <div class="green-belt belt"></div>
+          <div class="blue-belt belt"></div>
+          <div class="brown-belt belt"></div>
+          <div class="black-belt belt"></div>
+          <div class="white-belt belt"></div>
+          <div class="red-belt belt"></div>
+        </div>
         <div class="hero__container">
           <div></div>
           <div class="hero__right">
@@ -131,7 +152,7 @@
             </h2>
           </div>
         </div>
-        <div class="belt__container">
+        <!-- <div class="belt__container">
           <div class="white-belt belt"></div>
           <div class="yellow-belt belt"></div>
           <div class="orange-belt belt"></div>
@@ -141,7 +162,7 @@
           <div class="black-belt belt"></div>
           <div class="white-belt belt"></div>
           <div class="red-belt belt"></div>
-        </div>
+        </div> -->
       </section>
 
       <!--SECTION ABOUT-->
@@ -215,22 +236,22 @@
                     <img src="./images/FB_IMG_1699893609148.jpg" alt="">
                   </div>
 
-                  <div class="nav-auto">
+                  <!-- <div class="nav-auto">
                     <div class="a-b1"></div>
                     <div class="a-b2"></div>
                     <div class="a-b3"></div>
                     <div class="a-b4"></div>
                     <div class="a-b5"></div>
-                  </div>
+                  </div> -->
                 </div>
 
-                <div class="nav-m">
+                <!-- <div class="nav-m">
                   <label for="radio1" class="m-btn"></label>
                   <label for="radio2" class="m-btn"></label>
                   <label for="radio3" class="m-btn"></label>
                   <label for="radio4" class="m-btn"></label>
                   <label for="radio5" class="m-btn"></label>
-                </div>
+                </div> -->
               </div>
             </section>
 
@@ -510,5 +531,7 @@
     <script src="./js/swiper.js"></script>
     <!-- Slider About -->
     <script src="./js/slider-about.js"></script>
+    <!-- Slider Image Header -->
+    <script src="./js/slider-img-header.js"></script>
   </body>
 </html>
