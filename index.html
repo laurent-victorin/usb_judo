@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>USB Judo Taïso | Club de Judo du Bouscat</title>
 
-    <!-- FavIcon -->
-
-    <!-- Link Css -->
+<!-- FavIcon --> 🟢
+    <link rel="shortcut icon" href="./images/3057168.ico" type="image/x-icon">
+<!-- Link Css --> 🟢
     <link rel="stylesheet" href="./css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
-    <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+<!-- Link Google Fonts et Icones --> 🟢
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+<!-- Link swiperJs --> 🟢
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<!-- Animated Loging Page--> 🟢
+      <link rel="stylesheet" href="./css/animated-login-page.css">
+<!-- Font Awesome-->🟢
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <header class="header">
@@ -23,7 +24,7 @@
         <div class="geometric__shape"></div>
         <div class="nav__tag-titles">
           <a href="#home"
-            ><img class="icon__logo" src="./images/logo_club.png" alt=""
+            ><img class="icon__logo" src="./images/used/logo_club.png" alt=""
           /></a>
           <h1 class="nav__tag-title">US Bouscat<br />Judo-Taïso</h1>
         </div>
@@ -98,12 +99,12 @@
             >
             <p class="name__role-role">Président de Club</p>
           </div>
-          <span
+          <a href="#sign-in"><span
             aria-label="Deconnexion"
             class="material-symbols-outlined logout"
           >
             logout
-          </span>
+          </span></a>
           <button class="hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false">
             <span></span>
             <span></span>
@@ -113,16 +114,6 @@
         </div>
       </nav>
     </header>
-
-<!--============================================================-->    
-<!-- <section class="slider">
-    <button class="btn slider__btn" type="button" aria-label="Précédent">
-      &lt;
-    </button>
-    <button class="btn slider__btn" type="button" aria-label="Suivant">
-      &gt;
-    </button>
-  </section> -->
   
 <!--============================================================-->    
 <div id="header__slider">
@@ -131,12 +122,10 @@
   <div id="next-slider-btn" onclick="changeSlide(1)">&gt;</div>
 </div>
 
-
-
 <!--============================================================-->    
 
     <main class="main">
-      <!-- SECTION HERO-->
+<!-- SECTION HERO-->
       
       <section class="hero">
                 <div class="belt__container">
@@ -151,40 +140,26 @@
           <div class="red-belt belt"></div>
         </div>
         <div class="hero__container">
-          <div></div>
           <div class="hero__right">
             <h2 class="hero__title">
               Bienvenue <br />sur le site du <br /><span class="judo__taiso"
-                >Judo-Taïso</span
-              >
+                >Judo-Taïso</span>
               <br />du <span class="bouscat">Bouscat</span>
             </h2>
           </div>
+          <div class="img__container-hero">
+            <img class="img__logo-hero" src="./images/used/logo_club.png" alt="logo du club">
+          </div>
         </div>
-        <!-- <div class="belt__container">
-          <div class="white-belt belt"></div>
-          <div class="yellow-belt belt"></div>
-          <div class="orange-belt belt"></div>
-          <div class="green-belt belt"></div>
-          <div class="blue-belt belt"></div>
-          <div class="brown-belt belt"></div>
-          <div class="black-belt belt"></div>
-          <div class="white-belt belt"></div>
-          <div class="red-belt belt"></div>
-        </div> -->
+
       </section>
 
-      <!--SECTION ABOUT-->
+<!--🟢 SECTION ABOUT--> 
       <section class="section__container about">
         <div class="about__container">
           <div>
             <div class="belt__title">
-              <img
-                class="white-belt__img"
-                src="./images/Judo_white_belt.svg.png"
-                alt=""
-              />
-              <h2 class="section__title">A propos du Club</h2>
+            <h2 class="section__title">A propos du Club</h2>
             </div>
             <p class="section__about-description">
               Le <strong>Club de Judo du Bouscat</strong> est un lieu où tout le
@@ -209,171 +184,244 @@
             </p>
             <a href="#" class="read-more button">En savoir plus</a>
           </div>
-          <!-- <img
-            class="about__img"
-            src="./images/hero__001.jpg"
-            alt="Photo Promotion Judo"
-          /> -->
 
-            <section class="about__slider-section">
-              <div class="about__slider">
-                <div class="about__slide">
-                  <input type="radio" name="radio-btn" id="radio1">
-                  <input type="radio" name="radio-btn" id="radio2">
-                  <input type="radio" name="radio-btn" id="radio3">
-                  <input type="radio" name="radio-btn" id="radio4">
-                  <input type="radio" name="radio-btn" id="radio5">
+          <div id="about__slider">
+            <img id="slide2" src="./images/slide_about/slide_about_01.webp" alt="5 bonnes raisons de pratiquer le Judo">
+            <div id="previous-slider-btn2" onclick="changeSlide2(-1)">&lt;</div>
+            <div id="next-slider-btn2" onclick="changeSlide2(1)">&gt;</div>
+          </div>
 
 
-                  <div class="st first">
-                    <img src="./images/FB_IMG_1699893583879.jpg" alt="">
-                  </div>
-
-                  <div class="st">
-                    <img src="./images/FB_IMG_1699893590788.jpg" alt="">
-                  </div>
-
-                  <div class="st">
-                    <img src="./images/FB_IMG_1699893597147.jpg" alt="">
-                  </div>
-
-                  <div class="st">
-                    <img src="./images/FB_IMG_1699893603547.jpg" alt="">
-                  </div>
-
-                  <div class="st">
-                    <img src="./images/FB_IMG_1699893609148.jpg" alt="">
-                  </div>
-
-                  <!-- <div class="nav-auto">
-                    <div class="a-b1"></div>
-                    <div class="a-b2"></div>
-                    <div class="a-b3"></div>
-                    <div class="a-b4"></div>
-                    <div class="a-b5"></div>
-                  </div> -->
-                </div>
-
-                <!-- <div class="nav-m">
-                  <label for="radio1" class="m-btn"></label>
-                  <label for="radio2" class="m-btn"></label>
-                  <label for="radio3" class="m-btn"></label>
-                  <label for="radio4" class="m-btn"></label>
-                  <label for="radio5" class="m-btn"></label>
-                </div> -->
-              </div>
             </section>
 
-          <!-- <iframe
-            class="video__yt"
-            width="640"
-            height="382"
-            src="https://www.youtube.com/embed/BVQPjpB5Ork?si=qUT21nD24hWoDW5e"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe> -->
         </div>
       </section>
 
 
-      <!-- SECTION ACTIVITY -->
-      <section class="section__container activity">
-        <div>
-          <div class="belt__title">
-            <img
-              class="white-belt__img"
-              src="./images/Judo_yellow_belt.svg.png"
-              alt=""
-            />
-            <h2 class="section__title">Nos Cours</h2>
-          </div>
-
-        <div class="activity__card-container">
-          <div>
-            <div class="parent">
-              <div class="child baby__card">
-                <span>Horaires</span>
-              </div>
-            </div>
-            <div class="name__group">Cours Baby-Judo <br />4-5 ans</div>
-          </div>
-
-          <div>
-            <div class="parent">
-              <div class="child child__card">
-                <span>Horaires</span>
-              </div>
-            </div>
-            <div class="name__group">Cours Enfants <br />6-13 ans</div>
-          </div>
-
-          <div>
-            <div class="parent">
-              <div class="child adult__card">
-                <span>Horaires</span>
-              </div>
-            </div>
-            <div class="name__group">Cours Adultes <br />+14 ans</div>
-          </div>
-
-          <div>
-            <div class="parent">
-              <div class="child taiso__card">
-                <span>Horaires</span>
-              </div>
-            </div>
-            <div class="name__group">Cours Taïso <br />+14 ans</div>
-          </div>
-        </div>
-      </section>
-
-      <!-- SECTION DISCIPLINES -->
+<!-- SECTION DISCIPLINES -->
       <section class="section__container disciplines">
         <div>
-          <div class="belt__title">
-            <img
-              class="white-belt__img"
-              src="./images/Judo_orange_belt.svg.png"
-              alt=""
-            />
-            <h2 class="section__title">Disciplines</h2>
-          </div>
-          <span>Judo 60% / Taïso 40%</span><br>
-          <span>Faire infographie de fond</span>
+          <h2 data-heading="Du sport pour tous les âges" class="section__title">Nos différents cours</h2>
+
+          <section class="disciplines__container">
+            <img class="img__slide-discipline active" src="./images/used/illustration_baby_judo.jpg" alt="Photo Baby-Judo">
+            <img class="img__slide-discipline" src="./images/used/illustration_judo_enfants.webp" alt="Photo Judo Enfants">
+            <img class="img__slide-discipline" src="./images/used/illustration_judo_adulte.jpg" alt="Photo Judo Adultes">
+            <img class="img__slide-discipline" src="./images/used/illustration_taiso.jpg" alt="Photo Taïso">
+            <div class="disciplines__content active">
+              <h1>Cours <br><span>Baby-Judo</span></h1>
+              <p>"Découvrez le Judo "Baby" pour les petits judokas de 4 et 5 ans ! Au-delà de l'activité ludique, cette pratique stimule la motricité, développe l'équilibre et la coordination. Les tout-petits apprennent les valeurs essentielles du respect et de la discipline tout en s'amusant. Les cours adaptés sont conçus pour encourager la confiance en soi et l'interaction sociale. Le Judo "Baby" est bien plus qu'une activité sportive, c'est une aventure joyeuse où vos enfants grandiront en force physique et en caractère. Venez partager le sourire de votre enfant sur le tatami ! 🥋🌟"</p>
+              <a href="#" class="read-more button">En savoir plus</a>
+            </div>
+            <div class="disciplines__content">
+              <h1>Cours <br><span>Judo Enfants</span></h1>
+              <p>Dès l'âge de 6 ans, les futures graines de champions sont initiés aux technique de judo. Avant cela ils doivent maîtriser l'art de chuter. Ils adoptent sur le tapis un code moral : respect, amitié, courage, contrôle de soi, honneur, politesse, sincérité et modestie.
+              La discipline forge des caractères solides, tandis que l'entraide et la camaraderie créent une communauté soudée sur le tatami. Joignez-vous à nous pour grandir ensemble, découvrir la force intérieure, et atteindre de nouveaux sommets sur le chemin du judo ! 🥋💪</p>
+              <a href="#" class="read-more button">En savoir plus</a>
+            </div>
+            <div class="disciplines__content">
+              <h1>Cours <br><span>Judo Adultes</span></h1>
+              <p>À partir de 14 ans, notre cours de judo pour adultes offre une palette diversifiée d'expériences, adaptée à chacun. Que vous soyez débutant ou confirmé, de retour après une pause ou aspirant compétiteur, notre communauté accueille toutes les ambitions judokas. Certains cherchent le défi de la compétition, d'autres savourent simplement le plaisir du judo en loisir.
+
+              Notre tatami est le terrain où se rencontrent les rêves de la ceinture noire. Des novices aux vétérans, chacun progresse à son rythme, soutenu par une équipe passionnée. Rejoignez-nous pour une aventure où la variété des niveaux se transforme en une source d'inspiration, et où chaque séance est une étape vers le Graal tant convoité : la ceinture noire. Ensemble, franchissons chaque obstacle et célébrons chaque victoire sur le chemin du succès judoka ! 🥋🌟</p>
+              <a href="#" class="read-more button">En savoir plus</a>
+            </div>
+            <div class="disciplines__content">
+              <h1>Cours <br><span>Taïso</span></h1>
+              <p>Notre section Taïso est bien plus qu'un simple cours d'entraînement – c'est une invitation à explorer le potentiel insoupçonné de votre corps et de votre esprit. Ouvert aux participants à partir de 14 ans, ce programme dynamique et inclusif offre une variété d'exercices pratiqués en binômes, créant une atmosphère d'entraide et de camaraderie.
+
+              Les séances de Taïso s'adressent à tous, quel que soit le niveau de forme physique. De l'entretien cardio-respiratoire au renforcement musculaire, en passant par l'assouplissement et la relaxation, chaque exercice vise à améliorer votre bien-être global. En travaillant en binôme, vous développerez non seulement votre endurance et votre équilibre, mais également des capacités psychomotrices et une coordination exceptionnelles.</p>
+              <a href="#" class="read-more button">En savoir plus</a>
+            </div>
+            <div class="slider__discipline-navigation">
+              <div class="nav__discipline-btn active"></div>
+              <div class="nav__discipline-btn"></div>
+              <div class="nav__discipline-btn"></div>
+              <div class="nav__discipline-btn"></div>
+            </div>
+          </section>
       </section>
 
-      <!-- SECTION TEAM -->
-      <section class="section__container team">
-        <div>
-          <div class="belt__title">
-            <img
-              class="white-belt__img"
-              src="./images/Judo_green_belt.svg.png"
-              alt=""
-            />
-            <h2 class="section__title">Notre équipe</h2>
-          </div>
-      </section>
+<!-- SECTION COURS & TARIFS -->
+      <section class="section__container prices">
+        <h2 data-heading="Des Tarifs adaptés" class="section__title">Cours & Tarifs</h2>
+        <div class="price__container">
+          <h1 class="h1__price-container">
+            <span>Les Tarifs Annuels</span>
+            <span>Cours de Judo & Taïso</span>
+            <span class="price__description">Possibilité de règler en ligne en plusieurs fois, réduction pour les membres d'une même famille (-10€ par personne), possibilité de bénéficier du Pass'Sport (réduction de 50€), prix dégressifs en fonction de la date d'inscription.</span>
+          </h1>
+          <div class="price__card-container">
+            <div class="card-wrapper">
+              <div class="card">
+                <div class="card-front">
+                  <p>Baby-Judo <br>(2019-2018)</p>
+                  <p><span class="material-symbols-outlined check">
+check_box</span> Groupe A : Mercredi 15h30-16h30</p>
+                  <p><span class="material-symbols-outlined check">
+check_box</span> Groupe B : Mercredi 16h30-17h30</p>
+                  <p><span class="material-symbols-outlined check">
+check_box</span> Groupe C : Mercredi 17h30-18h30</p>
 
-      <!-- SECTION CODE MORALE -->
-      <section class="section__container team">
-        <div>
-          <div class="belt__title">
-            <img
-              class="white-belt__img"
-              src="./images/Judo_blue_belt.svg.png"
-              alt=""
-            />
-            <h2 class="section__title">Nos Valeurs</h2>
+                  <span class="material-symbols-outlined">arrow_forward</span>
+                </div>
+                <div class="card-back">
+                  <div class="card-price">
+                    <h2>166 € / an</h2>
+                    <p>41€ Licence-Assurance</p>
+                    <p>125€ Cotisation Annuelle</p>
+                    <p>pour 1h par semaine.</p>
+                  </div>
+
+                  <a href="#" class="price__btn">Inscriptions</a>
+                </div>
+              </div>
+              
+            </div>
+          <div class="card-wrapper">
+              <div class="card">
+                <div class="card-front">
+                  <p>Mini-Poussins <br>(2017-2016)</p>
+                  <p><span class="material-symbols-outlined check">
+check_box</span> Groupe A : Mercredi 17h30-18h30 & Vendredi 17h30-18h30</p>
+                  <p><span class="material-symbols-outlined check">
+check_box</span> Groupe B : Mardi 18h30-19h30 (débutants)</p>
+                  <span class="material-symbols-outlined">arrow_forward</span>
+                </div>
+                <div class="card-back">
+                  <div class="card-price mp">
+                    <h2>166 € / an</h2>
+                    <p>41€ Licence-Assurance</p>
+                    <p>125€ Cotisation Annuelle</p>
+                    <p>pour 1h par semaine.</p>
+                  </div>
+                  <div class="card-price mp">
+                    <h2>206 € / an</h2>
+                    <p>41€ Licence-Assurance</p>
+                    <p>165€ Cotisation Annuelle</p>
+                    <p>pour 2h par semaine.</p>
+                  </div>
+                  <a href="#" class="price__btn">Inscriptions</a>
+                </div>
+              </div>
+              
+            </div>
+
+            <div class="card-wrapper">
+              <div class="card">
+                <div class="card-front">
+                  <p>Poussins <br>(2015-2014)</p>
+                  <p>Mardi 17h30-18h30</p>
+                  <p>&</p>
+                  <p>Vendredi 17h30-18h30</p>
+
+                  <span class="material-symbols-outlined">arrow_forward</span>
+                </div>
+                <div class="card-back">
+                  <div class="card-price">
+                    <h2>206 € / an</h2>
+                    <p>41€ Licence-Assurance</p>
+                    <p>165€ Cotisation Annuelle</p>
+                    <p>pour 2h par semaine.</p>
+                  </div>
+
+                  <a href="#" class="price__btn">Inscriptions</a>
+                </div>
+              </div>
+              
+            </div>
+
+            <div class="card-wrapper">
+              <div class="card">
+                <div class="card-front">
+                  <p>Benjamins-Minimes <br>(2013-2012-2011-2010)</p>
+                  <p>Mardi 18h30-20h00</p>
+                  <p>&</p>
+                  <p>Vendredi 18h30-20h00</p>
+
+                  <span class="material-symbols-outlined">arrow_forward</span>
+                </div>
+                <div class="card-back">
+                  <div class="card-price">
+                    <h2>216 € / an</h2>
+                    <p>41€ Licence-Assurance</p>
+                    <p>175€ Cotisation Annuelle</p>
+                    <p>pour 3h par semaine.</p>
+                  </div>
+
+                  <a href="#" class="price__btn">Inscriptions</a>
+                </div>
+              </div>
+              
+            </div>
+
+            <div class="card-wrapper">
+              <div class="card">
+                <div class="card-front">
+                  <p>Adultes <br>à partir de 14 ans</p>
+                  <p>Mardi 20h00-21h30</p>
+                  <p>&</p>
+                  <p>Vendredi 20h00-21h30</p>
+
+                  <span class="material-symbols-outlined">arrow_forward</span>
+                </div>
+                <div class="card-back">
+                  <div class="card-price">
+                    <h2>216 € / an</h2>
+                    <p>41€ Licence-Assurance</p>
+                    <p>175€ Cotisation Annuelle</p>
+                    <p>pour 3h par semaine.</p>
+                  </div>
+
+                  <a href="#" class="price__btn">Inscriptions</a>
+                </div>
+              </div>
+              
+            </div>
+
+            <div class="card-wrapper">
+              <div class="card">
+                <div class="card-front">
+                  <p>Taïso <br>à partir de 14 ans</p>
+                  <p>Mercredi 19h30-21h00</p>
+                  <p>&</p>
+                  <p>Vendredi 18h45-20h00</p>
+
+                  <span class="material-symbols-outlined">arrow_forward</span>
+                </div>
+                <div class="card-back">
+                  <div class="card-price">
+                    <h2>216 € / an</h2>
+                    <p>41€ Licence-Assurance</p>
+                    <p>175€ Cotisation Annuelle</p>
+                    <p>pour 2h45 par semaine.</p>
+                  </div>
+
+                  <a href="#" class="price__btn">Inscriptions</a>
+                </div>
+              </div>
+              
+            </div>
+
           </div>
-          <span>Card Img Code Moral du Judo en Sweaper JS</span>
+          
         </div>
 
+      </section>
 
+<!-- SECTION TEAM -->
+      <section class="section__container team">
+        <h2 data-heading="Une équipe à votre écoute" class="section__title">Nos Equipes</h2>
+        <p><span class="titre_fin">Les membres du Bureau</span></p>
+        <img src="./images/used/Bureau USB Judo.jpg" alt="">
+        <p><span class="titre_fin">Les enseignants</span></p>
+      </section>
 
-          <!-- Swiper 5 bonnes raisons d'inscrire votre enfant au Judo-->
+<!-- SECTION CODE MORAL -->
+      <section class="section__container team">
+        <h2 data-heading="Notre Code Moral" class="section__title">Nos Valeurs</h2>
+
+          <!-- Swiper Code Moral -->
               <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide swiper-cm">
@@ -437,28 +485,139 @@
 
       </section>      
 
-      <!-- SECTION PRICES -->
-      <section class="section__container prices">
-        <h2 class="section__title">Tarifs</h2>
+
+
+<!-- SECTION SIGN IN -->
+      <section id="sign-in" class="section__container sign-in-container">
+        <h2 data-heading="Vous souhaitez vous inscrire" class="section__title">Inscriptions</h2>
+        <!-- <img src="./images/used/illustration-inscription.png" alt="illustration inscription">
+        <img src="./images/used/illustration-login.png" alt=""> -->
+
+        <div class="signin__container" id="signin-container">
+          <div class="form-container sign-up">
+            <form>
+              <h1>Créer un compte</h1>
+              <div class="social-icons">
+                <a href="#" class="icon"><i class="fa-brands fa-google-plus"></i></a>
+                <a href="#" class="icon"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="icon"><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+              <span>Ou utiliser votre mail pour vous enregistrer</span>
+              <input type="text" placeholder="Nom">
+              <input type="text" placeholder="Prénom">
+              <input type="email" placeholder="Email">
+              <input type="password" placeholder="Mot de Passe">
+              <button>Créer un Compte</button>
+            </form>
+          </div>
+
+          <div class="form-container sign-in">
+            <form>
+              <h1>Se connecter à son Compte</h1>
+              <div class="social-icons">
+                <a href="#" class="icon"><i class="fa-brands fa-google-plus"></i></a>
+                <a href="#" class="icon"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="icon"><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+              <span>Ou utiliser votre mail et mot de passe</span>
+              <input type="email" placeholder="Email">
+              <input type="password" placeholder="Mot de Passe">
+              <a href="#">Mot de passe oublié ?</a>
+              <button>Se Connecter</button>
+            </form>
+          </div>
+          <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                  <h1>Heureux de vous revoir</h1>
+                  <p>Entrez vos informations personnelles pour utiliser toutes les fonctionnalités du site</p>
+                  <button class="hidden" id="login">Se connecter</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                  <h1>Créer un compte</h1>
+                  <p>Inscrivez-vous avec vos informations personnelles pour utiliser toutes les fonctionnalités du site</p>
+                  <button class="hidden" id="register">S'inscrire</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
       </section>
 
-      <!-- SECTION SIGN IN -->
-      <section class="section__container sign-in">
-        <h2 class="section__title">Inscription</h2>
-      </section>
+<!--===== CONTACT =====-->
+      <section class="contact section" id="contact">
+        <h2 data-heading="Prise de Contact" class="section__title">Contactez-Nous</h2>
 
-      <!-- SECTION Contact -->
-      <section class="section__container contact">
-        <h2 class="section__title">Contact</h2>
+        <div class="contact__container container grid">
+          <div class="contact__content">
+            <div class="contact__info">
+              <div class="contact__card">
+                <i class="uil uil-envelope-edit contact__card-icon"></i>
+                <h3 class="contact__card-title">Email</h3>
+                <span class="contact__card-data">usbjudo33@gmail.com</span>
+                <span class="contact__button"
+                  >Ecrivez-moi
+                  <i class="uil uil-arrow-right contact__button-icon"></i
+                ></span>
+              </div>
+
+              <div class="contact__card">
+                <i class="uil uil-whatsapp contact__card-icon"></i>
+                <h3 class="contact__card-title">Informations par téléphone</h3>
+                <span class="contact__card-data">06 80 72 77 07</span>
+                <span class="contact__button"
+                  >Appellez-moi
+                  <i class="uil uil-arrow-right contact__button-icon"></i
+                ></span>
+              </div>
+
+              <div class="contact__card">
+                <i class="uil uil-facebook-messenger contact__card-icon"></i>
+                <h3 class="contact__card-title">Contact</h3>
+                <span class="contact__card-data"><strong>Laurent VICTORIN</strong</span><br><span><small>(Président de Club)</small></span>
+                  <i class="uil uil-arrow-right contact__button-icon"></i
+                ></span>
+              </div>
+            </div>
+          </div>
+          <div class="content__content">
+            <form action="" class="contact__form">
+              <div class="input__container">
+                <input type="text" class="input" />
+                <label for="">Nom</label>
+                <span>Username</span>
+              </div>
+              <div class="input__container">
+                <input type="email" class="input" />
+                <label for="">Email</label>
+                <span>Email</span>
+              </div>
+              <div class="input__container">
+                <input type="tel" class="input" />
+                <label for="">Téléphone</label>
+                <span>Téléphone</span>
+              </div>
+              <div class="input__container textarea">
+                <textarea name="" id="" rows="5" class="input"></textarea>
+                <label for="">Message</label>
+                <span>Message</span>
+              </div>
+              <button type="submit" class="button">
+                <i class="uil uil-navigation button-icon"></i>Envoyer
+              </button>
+            </form>
+          </div>
+        </div>
       </section>
     </main>
     
 
-    <!--SECTION FOOTER-->
+<!--SECTION FOOTER-->
     <footer class="footer">
       <div class="footer__logo-title">
         <a href="#home"
-          ><img class="footer__logo" src="./images/logo_club.png" alt=""
+          ><img class="footer__logo" src="./images/used/logo_club.png" alt=""
         /></a>
         <h3 class="footer__title">US Bouscat<br />Judo-Taïso</h3>
       </div>
@@ -520,27 +679,29 @@
       </p>
     </div>
 
-    <div class="scroll-up__container">
+    <!-- <div class="scroll-up__container">
       <div class="scroll-up">
         <a href="#home"><img src="./images/3057168.ico" alt="Back to top" /></a>
       </div>
-    </div>
+    </div> -->
 
-    <!-- Script JS-->
+<!-- Script JS-->
     <script src="./js/index.js"></script>
     <!-- FontAwesome-->
     <script
       src="https://kit.fontawesome.com/7cd067a4d7.js"
       crossorigin="anonymous"
     ></script>
-    <!-- Hamburger.js-->
+<!-- Hamburger.js-->
     <script src="./js/hamburger.js"></script>
     <!-- Swiper JS-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/swiper.js"></script>
-    <!-- Slider About -->
-    <script src="./js/slider-about.js"></script>
-    <!-- Slider Image Header -->
+<!-- Slider Image Header -->
     <script src="./js/slider-img-header.js"></script>
+<!-- Input Animation -->
+    <script src="./js/input-animation.js"></script>
+<!-- Animated Loging Page-->
+    <script src="./js/animated-login-page.js"></script>
   </body>
 </html>

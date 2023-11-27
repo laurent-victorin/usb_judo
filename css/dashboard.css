@@ -227,6 +227,7 @@ aside .sidebar a.active span{
 
 aside .sidebar a:hover{
     color: var(--color-primary);
+    background-color: var(--color-light);
 }
 
 aside .sidebar a:hover span{

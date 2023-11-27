@@ -94,3 +94,22 @@ function changeSlide(direction) {
 }
 
 setInterval("changeSlide(1)", 4000);
+
+const slide2 = [
+  "./images/slide_about/slide_about_01.webp",
+  "./images/slide_about/slide_about_02.webp",
+  "./images/slide_about/slide_about_03.webp",
+  "./images/slide_about/slide_about_04.webp",
+  "./images/slide_about/slide_about_05.webp",
+
+];
+let actualSlideAbout = 0;
+
+function changeSlide2(direction) {
+  actualSlideAbout = actualSlideAbout + direction;
+  if (actualSlideAbout > slide2.length - 1) actualSlideAbout = 0;
+  if (actualSlideAbout < 0) actualSlideAbout = slide2.length - 1;
+  document.getElementById("slide2").src = slide2[actualSlideAbout];
+}
+
+setInterval("changeSlide2(1)", 4000);
